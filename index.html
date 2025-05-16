@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Publisher App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📷 Image Publisher</h1>
+    <div class="upload-box">
+      <input type="file" id="imageInput" accept="image/*">
+      <input type="text" id="captionInput" placeholder="Write a caption...">
+      <button onclick="publishImage()">Publish</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
