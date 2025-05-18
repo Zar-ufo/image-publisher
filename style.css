@@ -1,77 +1,24 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 40px;
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-
-h1 {
+  font-family: sans-serif;
   text-align: center;
-  color: #333;
+  padding: 2rem;
+  background: #f0f0f5;
 }
 
-.upload-box {
+form {
+  margin-bottom: 2rem;
+}
+
+#gallery {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.upload-box input[type="file"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-.upload-box input[type="text"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.upload-box button {
-  padding: 10px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.upload-box button:hover {
-  background: #0056b3;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.image-post {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fafafa;
-}
-
-.image-post img {
-  width: 100%;
-  display: block;
-}
-
-.image-post p {
-  padding: 10px;
-  margin: 0;
+#gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #aaa;
 }

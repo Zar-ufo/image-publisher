@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Image Publisher App</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Image Publisher</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>📷 Image Publisher</h1>
-    <div class="upload-box">
-      <input type="file" id="imageInput" accept="image/*">
-      <input type="text" id="captionInput" placeholder="Write a caption...">
-      <button onclick="publishImage()">Publish</button>
-    </div>
-    <div class="gallery" id="gallery"></div>
-  </div>
-  <script src="script.js"></script>
+  <h1>📸 Supabase Image Publisher</h1>
+
+  <form id="upload-form">
+    <input type="file" id="image-input" accept="image/*" required />
+    <button type="submit">Upload Image</button>
+  </form>
+
+  <h2>🖼️ Published Images</h2>
+  <div id="gallery"></div>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
